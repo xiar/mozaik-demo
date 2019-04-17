@@ -85,6 +85,24 @@ var config = {
                     x: 2, y: 1
                 },
             ]
+        },
+        {
+            columns: 2,
+            rows:    1,
+            widgets: [
+                {
+                  type: 'jenkins.job_status_progress',
+                  job: process.env.JENKINS_JOB_0,
+                  columns: 1, rows: 1,
+                  x: 0, y: 0
+                },
+                {
+                  type: 'jenkins.job_test_result',
+                  job: process.env.JENKINS_JOB_0,
+                  columns: 1, rows: 1,
+                  x: 1, y: 0
+                }
+            ]
         }
     ]
 };
